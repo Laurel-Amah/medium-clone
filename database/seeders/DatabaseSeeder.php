@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@example.com',
         ]);
         
-        /*$categories = [
+        $categories = [
             'Technology',
             'Science',
             'Health',
@@ -28,15 +28,12 @@ class DatabaseSeeder extends Seeder
             'Entertainment',
             'Sports',
             'Politics',
-            'World',
-            'Opinion',
-            'Style',
-            'Travel',
+            'Style'
         ];
         foreach ($categories as $category) {
             Category::create(['name' => $category]);
         }
 
-        Post::factory(100)->create();*/
+        Post::factory(100)->create();
     }
 }
