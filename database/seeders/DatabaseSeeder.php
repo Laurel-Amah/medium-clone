@@ -17,18 +17,16 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => 'Admin',
+            'username' => 'testuser',
             'email' => 'admin@example.com',
         ]);
-        
+
         $categories = [
             'Technology',
             'Science',
             'Health',
             'Business',
-            'Entertainment',
-            'Sports',
-            'Politics',
-            'Style'
+            'Entertainment'
         ];
         foreach ($categories as $category) {
             Category::create(['name' => $category]);
